@@ -4,33 +4,6 @@
 -- Includes Login User Creation for RBAC Roles
 -- ============================================================
 
--- Drop existing tables cascadingly if re-running DDL
-DROP TABLE IF EXISTS property_school_proximity CASCADE;
-DROP TABLE IF EXISTS schools CASCADE;
-DROP TABLE IF EXISTS school_districts CASCADE;
-DROP TABLE IF EXISTS open_house_attendees CASCADE;
-DROP TABLE IF EXISTS open_houses CASCADE;
-DROP TABLE IF EXISTS appointments CASCADE;
-DROP TABLE IF EXISTS expenses CASCADE;
-DROP TABLE IF EXISTS expense_categories CASCADE;
-DROP TABLE IF EXISTS revenues CASCADE;
-DROP TABLE IF EXISTS transaction_participants CASCADE;
-DROP TABLE IF EXISTS transactions CASCADE;
-DROP TABLE IF EXISTS listings CASCADE;
-DROP TABLE IF EXISTS service_types CASCADE;
-DROP TABLE IF EXISTS property_features CASCADE;
-DROP TABLE IF EXISTS properties CASCADE;
-DROP TABLE IF EXISTS property_types CASCADE;
-DROP TABLE IF EXISTS client_agent_assignments CASCADE;
-DROP TABLE IF EXISTS clients CASCADE;
-DROP TABLE IF EXISTS agents CASCADE;
-DROP TABLE IF EXISTS offices CASCADE;
-DROP TABLE IF EXISTS neighborhoods CASCADE;
-DROP TABLE IF EXISTS zip_codes CASCADE;
-DROP TABLE IF EXISTS cities CASCADE;
-DROP TABLE IF EXISTS states CASCADE;
-DROP TABLE IF EXISTS staging_raw_data CASCADE;
-
 -- 1. Staging raw CSV table
 CREATE TABLE staging_raw_data (
     raw_id INT PRIMARY KEY,
