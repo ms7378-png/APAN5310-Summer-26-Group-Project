@@ -68,7 +68,7 @@ def run_etl(reset_schema=False):
         """)
         conn.commit()
 
-    # Step 1: Ingest into Staging Table updating ALL FIELDS
+    # 1: Ingest into Staging Table updating ALL FIELDS
     print(f"1. Ingesting raw CSV ({os.path.basename(CSV_FILE)}) into staging_raw_data table...")
     with open(CSV_FILE, mode='r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -115,7 +115,7 @@ def run_etl(reset_schema=False):
             ))
     conn.commit()
 
-    # Step 2: Seed Core Lookup Tables & Geography
+    #  2: Seed Core Lookup Tables & Geography
     print("2. Populating reference lookup dimension tables...")
     cur.execute("""
         INSERT INTO states (state_name, state_abbr) VALUES
@@ -154,7 +154,7 @@ def run_etl(reset_schema=False):
     """)
     conn.commit()
 
-    # Step 3: Populate Target 3NF Tables
+    #  3: Populate Target 3NF Tables
     print("3. Transforming & Ingesting Staging Data into 3NF Target Tables...")
     cur.execute("""
         INSERT INTO zip_codes (zip_code, city_id)
