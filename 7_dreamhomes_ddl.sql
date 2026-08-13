@@ -1,8 +1,6 @@
--- ============================================================
+
 -- Dream Homes NYC Enterprise Real Estate Relational Database System
--- Schema DDL Definition (PostgreSQL 18 Standard) - Final Parity Version
 -- Includes Login User Creation for RBAC Roles
--- ============================================================
 
 -- 1. Staging raw CSV table
 CREATE TABLE staging_raw_data (
