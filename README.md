@@ -17,7 +17,7 @@ After connecting to the `dreamhomes_nyc` database, run the DDL script to create 
 > **Note:** Replace `<path-to-repo>` below with the actual location where you saved this project on your machine.
 
 1. Expand the left panel → `dreamhomes_nyc` → right-click → **Query Tool**
-2. Open the file `<path-to-repo>\dreamhomes_ddl_v2.sql`
+2. Open the file `<path-to-repo>\7_dreamhomes_ddl.sql`
 3. Click **▶ Execute**
 4. A "Query returned successfully" message confirms it worked
 
