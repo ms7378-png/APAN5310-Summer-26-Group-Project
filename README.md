@@ -4,15 +4,13 @@
 
 Open pgAdmin and create the database.
 
-** 1.1. pgAdmin (GUI):**
-
 1. Right-click **Databases** → **Create** → **Database**
 2. Enter the name: `dreamhomes_nyc`
 3. Click **Save**
 
 
 
-### 1.2. Run the DDL Script to Create Tables
+### 2. Run the DDL Script to Create Tables
 
 After connecting to the `dreamhomes_nyc` database, run the DDL script to create all 25 tables.
 
