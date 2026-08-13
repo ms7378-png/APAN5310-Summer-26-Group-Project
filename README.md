@@ -1,10 +1,10 @@
-## 3. Database Setup
+## Database Setup
 
-### 3.1 Create the Database
+### 1. Create the Database
 
 Open pgAdmin and create the database.
 
-**Method A — pgAdmin (GUI):**
+** 1.1. pgAdmin (GUI):**
 
 1. Right-click **Databases** → **Create** → **Database**
 2. Enter the name: `dreamhomes_nyc`
@@ -12,7 +12,7 @@ Open pgAdmin and create the database.
 
 ```
 
-### 3.2 Run the DDL Script to Create Tables
+### 1.2. Run the DDL Script to Create Tables
 
 After connecting to the `dreamhomes_nyc` database, run the DDL script to create all 25 tables.
 
